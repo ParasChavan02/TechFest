@@ -1,0 +1,18 @@
+{
+  "name": "ui-components",
+  "version": "1.0.0",
+  "description": "Accessible UI Components",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "npx http-server ."
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.0.0",
+    "http-server": "^14.1.1"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}

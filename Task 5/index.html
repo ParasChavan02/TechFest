@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Components Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>UI Components Demo</h1>
+    </header>
+
+    <main>
+        <!-- Modal Demo -->
+        <section class="demo-section">
+            <h2>Modal Dialog</h2>
+            <button id="openModalBtn" class="btn">Open Modal</button>
+            <div id="demoModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+                <div class="modal-content">
+                    <h2 id="modalTitle">Example Modal</h2>
+                    <p>This is an accessible modal dialog.</p>
+                    <button class="modal-close" aria-label="Close modal">×</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabs Demo -->
+        <section class="demo-section">
+            <h2>Tabbed Content</h2>
+            <div id="demoTabs" class="tabs">
+                <div role="tablist" class="tab-list">
+                    <button role="tab" aria-selected="true" id="tab1">Tab 1</button>
+                    <button role="tab" aria-selected="false" id="tab2">Tab 2</button>
+                    <button role="tab" aria-selected="false" id="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content">
+                    <div role="tabpanel" aria-labelledby="tab1">
+                        <p>Content for Tab 1</p>
+                    </div>
+                    <div role="tabpanel" aria-labelledby="tab2" hidden>
+                        <p>Content for Tab 2</p>
+                    </div>
+                    <div role="tabpanel" aria-labelledby="tab3" hidden>
+                        <p>Content for Tab 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel Demo -->
+        <section class="demo-section">
+            <h2>Carousel</h2>
+            <div id="demoCarousel" class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide">Slide 1</div>
+                    <div class="carousel-slide">Slide 2</div>
+                    <div class="carousel-slide">Slide 3</div>
+                </div>
+                <button class="carousel-prev" aria-label="Previous slide">←</button>
+                <button class="carousel-next" aria-label="Next slide">→</button>
+                <div class="carousel-dots" role="tablist"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="components/Modal.js"></script>
+    <script src="components/Tabs.js"></script>
+    <script src="components/Carousel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
